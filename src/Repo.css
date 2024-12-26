@@ -1,0 +1,317 @@
+.rightrepo{
+  width: 242px;
+  height: 100vh;
+  border-right: 1px solid rgba(233, 234, 235, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.signlogo{
+  height: 80px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin-left: 20px;
+
+}
+.repo{
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+
+}
+
+
+.repologobox{
+  padding-top: 30px;
+  width: 242px;
+  height: 356px;
+}
+.repolist{
+  height: 35px;
+  width: 210px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 2px 0px var(--ColorsEffectsShadowsshadow-xs);
+  border: 1px solid rgba(213, 215, 218, 1)
+
+}
+.reponame{
+  font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+}
+.repobuttons{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 2px;
+  align-items: center;
+}
+.sign-button{
+  height: 48px;
+  width: 220px;
+  border-radius: 8px;
+  border: none;
+  font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+}
+.sign-button p{
+  margin: 0;
+  display:flex;
+  gap: 8px;
+  margin-left: 13px;
+  align-items: center;
+  justify-content: start;
+
+}
+.grey p{
+  color: rgba(65, 70, 81, 1);
+
+}
+.inrlogo{
+  width: 22px;
+  height:20px ;
+}
+.end{
+  align-items: end;
+  justify-content: end;
+  height: 100px;
+}
+.leftrepo{
+  height: 99.5vh;
+  width: 90%;
+  background: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(233, 234, 235, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftrepo-center{
+  width: 97%;
+  height: 96%;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(233, 234, 235, 1);
+  box-shadow: 0px 1px 2px 0px var(--ColorsEffectsShadowsshadow-xs);
+ border-radius: 10px;
+
+
+
+}
+.lefttop{
+  width: 100%;
+  height: 150px;
+  background: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(233, 234, 235, 1);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.toprepo{
+  width: 96%;
+  height: 50px;
+  display: flex;
+}
+.topreponame{
+  width:70%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+}
+.topreponame p{
+  margin: 0;
+  margin-left: 8px;
+}
+.repohead{
+  font-family: Inter;
+font-size: 18px;
+font-weight: 600;
+line-height: 20px;
+color: rgba(24, 29, 39, 1);
+
+}
+.repohead1{
+font-family: Inter;
+font-size: 12px;
+font-weight: 200;
+line-height: 10px;
+color: rgba(65, 70, 81, 1);
+}
+.buttons{
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 20px;
+  gap: 8px;
+}
+.icons{
+  display: flex;
+  width: 55%; 
+  height: 75%;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid rgba(213, 215, 218, 1);
+  background: rgba(255, 255, 255, 1);
+
+  box-shadow: 0px 1px 2px 0px var(--ColorsEffectsShadowsshadow-xs);
+box-shadow: 0px -2px 0px 0px var(--ColorsEffectsShadowsshadow-skeumorphic-inner) inset;
+box-shadow: 0px 0px 0px 1px var(--ColorsEffectsShadowsshadow-skeumorphic-inner-border) inset;
+
+}
+
+/* .icon-text{
+  font-family: Inter;
+ font-size: 13px;
+ font-weight: 300;
+line-height: 20px;
+  text-align: center;
+  margin: 0;
+} */
+.icon-text {
+  font-family: Inter;
+  font-size: 0.9vw; /* Adjust font size based on the viewport width */
+  font-weight: 300;
+  line-height: 1.5em; /* Relative to font size for scalability */
+  text-align: center;
+  margin: 0 auto; /* Center text horizontally */
+  width: 80%; /* Use percentage for flexible width */
+}
+.iconlogo {
+  height: 2vw; /* Scales with the viewport width */
+  width: 2vw; /* Maintains aspect ratio */
+  max-height: 24px; /* Prevents it from growing too large */
+  max-width: 24px; /* Prevents it from growing too large */
+  min-height: 12px; /* Sets a minimum size for smaller screens */
+  min-width: 12px; /* Sets a minimum size for smaller screens */
+}
+
+
+/* .iconlogo{
+  height: 18px;
+  width: 18px;
+} */
+.clor{
+  background: rgba(255, 255, 255, 1);
+  color: rgba(65, 70, 81, 1);
+  height: 43px;
+
+
+}
+.clor1{
+  background: rgba(21, 112, 239, 1);
+  border: 2px solid;
+border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+color: rgba(255, 255, 255, 1);
+
+}
+.search input{
+  outline: none;
+  border: none;
+}
+.search{
+  display: flex;
+  padding:10px 14px 10px 14px;
+  align-items: center;
+  gap: 6px;
+  width: 300px;
+  height: 25px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(213, 215, 218, 1);
+  box-shadow: 0px 1px 2px 0px var(--ColorsEffectsShadowsshadow-xs);
+box-shadow: 0px -2px 0px 0px var(--ColorsEffectsShadowsshadow-skeumorphic-inner) inset;
+box-shadow: 0px 0px 0px 1px var(--ColorsEffectsShadowsshadow-skeumorphic-inner-border) inset;
+
+}
+.search img{
+  width: 20px;
+  height: 20px;
+}
+.bottomrepo{
+  height: max-content;
+  width: 100%;
+
+}
+.reponames{
+  width: 100%;
+  height: 77.6px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(213, 215, 218, 1)
+}
+.repobox{
+  margin-left: 1%;
+  height: 80%;
+  width: 95%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap:5px;
+}
+.repop{
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  gap: 6px;
+  font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+color: rgba(24, 29, 39, 1);
+
+
+}
+.privateicon{
+  width: 50px;
+  height:17px;
+ 
+}
+.repobottombox{
+  width: max-content;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element{
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  align-items: center;
+  width: max-content;
+  gap: 3px;
+}
+.elementsbox{
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  width: max-content;
+  gap: 25px;
+  margin-left: 5px;
+}
+.datalogo{
+  height: 10px;
+  width: 10px;
+}
+.element p{
+color: rgba(24, 29, 39, 1);
+
+}
+/*  */

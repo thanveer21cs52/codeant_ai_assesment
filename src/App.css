@@ -1,0 +1,839 @@
+body{
+  background-color: rgba(250, 250, 250, 1);
+  
+}
+
+.sign{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.left-side{
+  background: rgba(255, 255, 255, 1);
+  width: 50%;
+  height:100vh;
+  z-index: 1;
+}
+.logo{
+  position: absolute;
+  width: 50%;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  z-index: 2;
+}
+#bk-logo{
+  width:234px;
+  height:280px;
+}
+.center{
+  width: 50vw;
+  height:100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+z-index: 3;
+}
+.box-1{
+  position: relative;
+  width:474px;
+  height:322px;
+ 
+
+}
+.box-2{
+  position: absolute;
+  width:447px;
+  height:170px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 1);
+  z-index: 1;
+  box-shadow: 0px 0px 24px 0px rgba(8, 23, 53, 0.16);
+  display: flex;
+  flex-direction: column;
+
+ 
+}
+.box-3{
+  margin-top: 156px;
+  margin-left: 208px;
+  position: absolute;
+  width:265px;
+  height:164px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 24px;
+  z-index: 2;
+  box-shadow: 0px 0px 24px 0px rgba(8, 23, 53, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+.box-2top{
+  height: 120px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid rgba(230, 232, 240, 1)
+}
+.logo-box{
+  position: relative;
+  height: 29px;
+  width: 314px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 21px;
+  margin-left: 22px;
+}
+
+.mini-logo{
+  height: 29px;
+  width: 24px;
+}
+.min-logo{
+  height: 29px;
+  width: 24px;
+}
+#logotext{
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: rgba(8, 23, 53, 1);
+
+}
+.box-2bottombox{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+ height: 80%;
+ width: 123px;
+ gap: 0;
+}
+.box2-number{
+  margin: 0;
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: rgba(8, 23, 53, 1);
+  height: 27px;
+  width: 37px;
+}
+.box-2bottom{
+ width: 100%;
+ height: 100%;
+ border-radius: 0 0 24px 24px;
+ display: flex;
+ justify-content: space-evenly;
+
+}
+.box2-text{
+  margin:0 ;
+  height: 20px;
+  width: 125px;
+  font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-decoration-skip-ink: none;
+}
+.box3-inrbox{
+  height: 133.37px;
+  width: 204px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.inrbox-left{
+  width: 110px;
+}
+.inrcircl{
+  width: 56px;
+  height: 56.77px;
+  background: rgba(157, 144, 250, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+}
+#inrlogo{
+  width: 28px;
+  height:28.38px ;
+}
+.inrbox{
+  width: 108px;
+  height: 100%;
+}
+.inrtxt{
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgba(8, 23, 53, 1);
+  margin-bottom:5px ;
+}
+.inrnmr{
+  font-family: 'Inter';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: rgba(8, 23, 53, 1);
+  margin: 0;
+}
+.inrbox-right{
+  width: 80px;
+}
+.arrow-logo{
+  height: 24px;
+  width: 24.33px;
+}
+.arrowlogo{
+  margin-top: 8px;
+  height: 24px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  gap:0;
+}
+#arrowtext{
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgba(0, 73, 198, 1);
+  margin: 0;
+  width: fit-content;
+
+}
+.arowtext{
+  font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+color: rgba(23, 23, 23, 1);
+margin: 0%;
+
+
+}
+.right-side{
+  width: 50%;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.signin-page{
+  height: 472.34px;
+  width:522px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 2px 0px var(--ColorsEffectsShadowsshadow-xs);
+  border: 1px solid rgba(233, 234, 235, 1);
+  border-radius: 12px;
+}
+
+.signin-text{
+  height: 54px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.signin-text p{
+width: max-content;
+}
+.sign-top{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+.sign-logo{
+  height: 80px;
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.welcome{
+  height: 40px;
+  width: 470px;
+  border-radius: 8px;
+  border: 1px solid rgba(233, 234, 235, 1);
+  background: rgba(250, 250, 250, 1);
+  margin-top: 10px;
+
+}
+.signlogo-txt{
+  height: 15px;
+  width: 100px;
+}
+.sign-box{
+  height: 29px;
+  width: 140px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.sign-logo p{
+  font-family: 'Inter';
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 25px;
+  color: rgba(8, 23, 53, 1);
+  margin: 0;
+}
+.signbutton{
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  border: none;
+
+}
+.blue{
+  background: rgba(21, 112, 239, 1);
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 1);
+  border: 2px solid;
+border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+
+
+
+}
+.grey{
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  color: rgba(65, 70, 81, 1);
+  background:none;
+
+
+}
+.sign-bottom{
+  height:auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(213, 215, 218, 1)
+}
+.signin{
+  margin-top: 20px;
+  height: 40px;
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid rgba(233, 234, 235, 1);
+  background: rgba(250, 250, 250, 1);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgba(23, 23, 23, 1);
+  font-family: Inter;
+font-size: 13px;
+font-weight: 300;
+line-height: 15px;
+
+
+}
+.icon{
+  display: flex;
+  width: 200px; 
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.icontext{
+  font-family: Inter;
+font-size: 13px;
+font-weight: 300;
+line-height: 15px;
+  text-align: center;
+  margin: 0;
+}
+.iconlogo{
+  height: 18px;
+  width: 18px;
+}
+@media (min-width: 900px) and (max-width: 1190px) {
+  .sign{
+    width: 100%;
+    height: 100vh;
+    
+  }
+  .left-side{
+    background: rgba(255, 255, 255, 1);
+    width: 50%;
+    height:100%;
+  }
+  #bk-logo{
+    width:20vw;
+    height:25vw;
+  }
+  .center{
+    width: 50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+  z-index: 3;
+  }
+
+  .box-1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:40%;
+    align-items: center;
+   
+  
+  }
+  .box-2 {
+    width: 70.7%; /* Converted from 447px */
+    height: 56.25%; /* Converted from 170px */
+    display: flex;
+    flex-direction: column;
+}
+.box-3{
+  margin-top: 27%;
+  margin-left: 38%;
+  width: 43.7%; /* Converted from 447px */
+  height: 43.25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+.box-2top{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+   
+  }
+  .logo-box{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 0;
+    margin-left: 4%;
+  }
+  .min-logo{
+    height: 7%;
+    width: 6%;
+  }
+  .mini-logo{
+    height: 29px;
+    width: 24px;
+  }
+  #logotext{
+    font-family: 'Inter';
+    font-size: 92%;
+    line-height: 95%;
+  
+  }
+  .box-2bottombox{
+   height: 80%;
+   width: 30%;
+  }
+  .box2-number{
+    font-size: 100%;
+    font-weight: 700;
+    line-height:100%;
+    height: fit-content;
+    width: fit-content;
+  }
+  .box-2bottom{
+   width: 100%;
+   height: 100%;
+   border-radius: 0 0 24px 24px;
+   display: flex;
+   justify-content: space-evenly;
+  
+  }
+  .box2-text{
+    height: fit-content;
+    width: fit-content;
+    margin-top: 7%;
+  font-size:60%;
+  font-weight: 400;
+  line-height: 90%;
+  }
+  .box3-inrbox{
+    height: 90%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .inrbox-left{
+    width: 50%;
+  }
+  .inrcircl{
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  
+  }
+  #inrlogo{
+    width: 55%;
+    height:55% ;
+  }
+  .inrbox{
+    width: fit-content;
+    height: fit-content;
+  }
+  .inrtxt{
+    font-family: 'Inter';
+    font-size: 70%;
+    font-weight: 700;
+    line-height: 80%;
+    margin-bottom:5px ;
+  }
+  .inrnmr{
+    font-family: 'Inter';
+    font-size: 150%;
+    font-weight: 700;
+    line-height: 150%;
+    color: rgba(8, 23, 53, 1);
+    margin: 0;
+  }
+  .signin-page{
+    height: 472.34px;
+    width:80%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 2px 0px var(--ColorsEffectsShadowsshadow-xs);
+    border: 1px solid rgba(233, 234, 235, 1);
+    border-radius: 12px;
+  }
+  .signin-text{
+    height: 54px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .signin-text p{
+  width: max-content;
+  }
+  .sign-top{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .sign-logo{
+    height: 80px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  .welcome{
+    height: 40px;
+    width: 80%;
+    border-radius: 8px;
+    border: 1px solid rgba(233, 234, 235, 1);
+    background: rgba(250, 250, 250, 1);
+    margin-top: 10px;
+  
+  }
+  .signlogo-txt{
+    height: 15px;
+    width: 100px;
+  }
+  .sign-box{
+    height: 29px;
+    width: 140px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  .sign-logo p{
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+    color: rgba(8, 23, 53, 1);
+    margin: 0;
+  }
+  .signbutton{
+    height: 100%;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+  
+  }
+  .blue{
+    background: rgba(21, 112, 239, 1);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  
+  
+  
+  }
+  .grey{
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    color: rgba(65, 70, 81, 1);
+    background:none;
+  
+  
+  }
+  .sign-bottom{
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(213, 215, 218, 1)
+  }
+  .signin{
+    margin-top: 20px;
+    height: 40px;
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid rgba(233, 234, 235, 1);
+    background: rgba(250, 250, 250, 1);
+    display: flex;
+    justify-content: center;
+  }
+  .icon{
+    display: flex;
+    width: 200px; 
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .icontext{
+    font-family: Inter;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  .iconlogo{
+    height: 18px;
+    width: 18px;
+  }
+
+  
+}
+@media (max-width: 900px) {
+  html{
+    width: 100%;
+    height: 100vh;
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+  }
+  /* #root{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  } */
+  .left-side {
+    display: none; /* Hide the left side */
+  }
+
+  .right-side {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%; /* Make right side take full width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .signin-page{
+    height: 472.34px;
+    width:80%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 2px 0px var(--ColorsEffectsShadowsshadow-xs);
+    border: 1px solid rgba(233, 234, 235, 1);
+    border-radius: 12px;
+  }
+  .signin-text{
+    height: 54px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .signin-text p{
+  width: max-content;
+  }
+  .sign-top{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .sign-logo{
+    height: 80px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  .welcome{
+    height: 40px;
+    width: 80%;
+    border-radius: 8px;
+    border: 1px solid rgba(233, 234, 235, 1);
+    background: rgba(250, 250, 250, 1);
+    margin-top: 10px;
+  
+  }
+  .signlogo-txt{
+    height: 15px;
+    width: 100px;
+  }
+  .sign-box{
+    height: 29px;
+    width: 140px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  .sign-logo p{
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+    color: rgba(8, 23, 53, 1);
+    margin: 0;
+  }
+  .signbutton{
+    height: 100%;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+  
+  }
+  .blue{
+    background: rgba(21, 112, 239, 1);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  
+  
+  
+  }
+  .grey{
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    color: rgba(65, 70, 81, 1);
+    background:none;
+  
+  
+  }
+  .sign-bottom{
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(213, 215, 218, 1)
+  }
+  .signin{
+    margin-top: 20px;
+    height: 40px;
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid rgba(233, 234, 235, 1);
+    background: rgba(250, 250, 250, 1);
+    display: flex;
+    justify-content: center;
+  }
+  .icon{
+    display: flex;
+    width: 200px; 
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .icontext{
+    font-family: Inter;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  .iconlogo{
+    height: 18px;
+    width: 18px;
+  }
+
+  
+}
