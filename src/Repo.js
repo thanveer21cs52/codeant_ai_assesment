@@ -6,8 +6,9 @@ import search from "./public/pictures/search.png";
 import badge from "./public/pictures/Badge.png";
 import badge1 from "./public/pictures/Badge (1).png";
 import elipse from "./public/pictures/Ellipse 1.png";
+import bars from "./public/pictures/bars.png";
 import "./Repo.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import database from './public/pictures/database.png'
 const repos=[
   {
@@ -62,6 +63,25 @@ const repos=[
 ]
 
 function Repo() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 751);
+
+  useEffect(() => {
+    // Function to handle window resize
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 751);
+    };
+
+    // Add event listener for resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   const [list, setlist] = useState("Repositories");
   const TruncatedText = ({ text, maxLength }) => {
     // Function to truncate the string
@@ -81,7 +101,8 @@ function Repo() {
         <div className="rightrepo">
           <div className="repologobox">
             <div className="signlogo">
-              <div className="sign-box">
+            <div className="dropdown">
+            <div className="sign-box">
                 <img
                   src={require("./public/pictures/logo.png")}
                   alt="mini logo"
@@ -93,18 +114,22 @@ function Repo() {
                   className="signlogo-txt"
                 />
               </div>
+              <img src={bars} id="bar"  onClick={toggleMenu}/>
+            </div>
+              <div className="dropdownlist" style={{  display:  isMobile&&menuOpen ? "none":"flex" }}>
               <button className="repolist">
                 <span className="reponame">
                   <TruncatedText text={"UtkarshDhairyaPanwar"} maxLength={15} />{" "}
-                  <img src={down} />
                 </span>
+                <img src={down} />
               </button>
+              </div>
             </div>
-            <div className="repobuttons">
+            <div className="repobuttons" style={{  display: isMobile&&menuOpen ? "none":"flex" }}>
               <button
                 type="button"
                 className={`sign-button ${
-                  list === "Repositories" ? "blue" : "grey"
+                  list === "Repositories" ? "blue1" : "grey1"
                 }`}
                 onClick={() => setlist("Repositories")}
               >
@@ -112,7 +137,12 @@ function Repo() {
                   <img
                     src={require("./public/pictures/home.png")}
                     alt="background logo"
-                    className="inrlogo"
+                    className="inrlogo home"
+                  />
+                  <img
+                    src={require("./public/pictures/home (1).png")}
+                    alt="background logo"
+                    className="inrlogo home1"
                   />
                   Repositories
                 </p>
@@ -120,7 +150,7 @@ function Repo() {
               <button
                 type="button"
                 className={`sign-button ${
-                  list === "AI Code Review" ? "blue" : "grey"
+                  list === "AI Code Review" ? "blue1" : "grey1"
                 }`}
                 onClick={() => setlist("AI Code Review")}
               >
@@ -136,7 +166,7 @@ function Repo() {
               <button
                 type="button"
                 className={`sign-button ${
-                  list === "Cloud Security" ? "blue" : "grey"
+                  list === "Cloud Security" ? "blue1" : "grey1"
                 }`}
                 onClick={() => setlist("Cloud Security")}
               >
@@ -152,7 +182,7 @@ function Repo() {
               <button
                 type="button"
                 className={`sign-button ${
-                  list === "How to Use" ? "blue" : "grey"
+                  list === "How to Use" ? "blue1" : "grey1"
                 }`}
                 onClick={() => setlist("How to Use")}
               >
@@ -168,7 +198,7 @@ function Repo() {
               <button
                 type="button"
                 className={`sign-button ${
-                  list === "Settings" ? "blue" : "grey"
+                  list === "Settings" ? "blue1" : "grey1"
                 }`}
                 onClick={() => setlist("Settings")}
               >
@@ -183,10 +213,10 @@ function Repo() {
               </button>
             </div>
           </div>
-          <div className="repobuttons end">
+          <div className="repobuttons end" style={{ display: isMobile&&menuOpen ? "none":"flex", }}>
             <button
               type="button"
-              className={`sign-button ${list === "Support" ? "blue" : "grey"}`}
+              className={`sign-button ${list === "Support" ? "blue1" : "grey1"}`}
               onClick={() => setlist("Support")}
             >
               <p>
@@ -200,7 +230,7 @@ function Repo() {
             </button>
             <button
               type="button"
-              className={`sign-button ${list === "Logout" ? "blue" : "grey"}`}
+              className={`sign-button ${list === "Logout" ? "blue1" : "grey1"}`}
               onClick={() => setlist("Logout")}
             >
               <p>
@@ -216,7 +246,7 @@ function Repo() {
         </div>
         <div className="leftrepo">
           <div className="leftrepo-center">
-            <div className="lefttop">
+            <div className="lefttop" style={{  display: isMobile&&!menuOpen ? "none":"flex" }}>
               <div className="toprepo">
                 <div className="topreponame">
                   <p className="repohead">Repositories</p>
@@ -224,12 +254,12 @@ function Repo() {
                 </div>
                 <div className="buttons">
                   <button type="button" className="icons clor">
-                    <img src={fresh} alt="mini logo" className="iconlogo" />
-                    <p className="icon-text">Refresh All</p>
+                    <img src={fresh} alt="mini logo" className="icnlogo" />
+                    <p className="icntext">Refresh All</p>
                   </button>
                   <button type="button" className="icons clor1">
-                    <img src={plus} alt="mini logo" className="iconlogo" />
-                    <p className="icon-text">Add Repository</p>
+                    <img src={plus} alt="mini logo" className="icnlogo" />
+                    <p className="icntext">Add Repository</p>
                   </button>
                 </div>
               </div>
@@ -243,7 +273,7 @@ function Repo() {
                 </div>
               </div>
             </div>
-            <div className="bottomrepo">
+            <div className={`bottomrepo ${isMobile && !menuOpen ? 'shadow' : ''}`}>
             {repos.map((singlerepo, index) => (
               <div className="reponames" key={index}>
                 <div className="repobox">

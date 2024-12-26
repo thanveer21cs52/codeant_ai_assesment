@@ -7,13 +7,42 @@
   justify-content: space-between;
 }
 .signlogo{
-  height: 80px;
+  height: max-content;
+  padding: 30px 0 10px 0;
   width: 220px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
   margin-left: 20px;
+
+}
+.home1{
+  display: none;
+}
+.blue1{
+  background: rgba(21, 112, 239, 1);
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 1);
+  border: 2px solid;
+border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+
+
+
+}
+.grey1{
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  color: rgba(65, 70, 81, 1);
+  background:none;
+
 
 }
 .repo{
@@ -26,7 +55,7 @@
 
 
 .repologobox{
-  padding-top: 30px;
+
   width: 242px;
   height: 356px;
 }
@@ -36,7 +65,9 @@
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 1px 2px 0px var(--ColorsEffectsShadowsshadow-xs);
-  border: 1px solid rgba(213, 215, 218, 1)
+  border: 1px solid rgba(213, 215, 218, 1);display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 }
 .reponame{
@@ -53,6 +84,14 @@ line-height: 18px;
   width: 100%;
   gap: 2px;
   align-items: center;
+}
+.dropdown{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#bar{
+  display: none;
 }
 .sign-button{
   height: 48px;
@@ -88,27 +127,30 @@ line-height: 19px;
 }
 .leftrepo{
   height: 99.5vh;
-  width: 90%;
+  width: 90vw;
   background: rgba(255, 255, 255, 1);
   border-bottom: 1px solid rgba(233, 234, 235, 1);
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 .leftrepo-center{
   width: 97%;
-  height: 96%;
+  height: max-content;
+  padding-top: 10px ;
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(233, 234, 235, 1);
   box-shadow: 0px 1px 2px 0px var(--ColorsEffectsShadowsshadow-xs);
- border-radius: 10px;
+ border-radius: 6px;
 
 
 
 }
 .lefttop{
   width: 100%;
-  height: 150px;
+  height: max-content;
+  padding: 15px 0 15px 0;
   background: rgba(255, 255, 255, 1);
   border-bottom: 1px solid rgba(233, 234, 235, 1);
   display: flex;
@@ -119,15 +161,16 @@ line-height: 19px;
 }
 .toprepo{
   width: 96%;
-  height: 50px;
+  height: fit-content;
   display: flex;
 }
 .topreponame{
   width:70%;
-  height:100%;
+  height:max-content;
   display: flex;
   flex-direction: column;
   justify-content:space-around;
+  gap: 10px;
 }
 .topreponame p{
   margin: 0;
@@ -149,7 +192,7 @@ line-height: 10px;
 color: rgba(65, 70, 81, 1);
 }
 .buttons{
-  width: 30%;
+  width: fit-content;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -158,8 +201,8 @@ color: rgba(65, 70, 81, 1);
 }
 .icons{
   display: flex;
-  width: 55%; 
-  height: 75%;
+  width: 140px; 
+  height: 35px;
   border-radius: 5px;
   align-items: center;
   justify-content: center;
@@ -173,41 +216,26 @@ box-shadow: 0px 0px 0px 1px var(--ColorsEffectsShadowsshadow-skeumorphic-inner-b
 
 }
 
-/* .icon-text{
+.icntext{
   font-family: Inter;
- font-size: 13px;
+ font-size: 12px;
  font-weight: 300;
 line-height: 20px;
   text-align: center;
   margin: 0;
-} */
-.icon-text {
-  font-family: Inter;
-  font-size: 0.9vw; /* Adjust font size based on the viewport width */
-  font-weight: 300;
-  line-height: 1.5em; /* Relative to font size for scalability */
-  text-align: center;
-  margin: 0 auto; /* Center text horizontally */
-  width: 80%; /* Use percentage for flexible width */
-}
-.iconlogo {
-  height: 2vw; /* Scales with the viewport width */
-  width: 2vw; /* Maintains aspect ratio */
-  max-height: 24px; /* Prevents it from growing too large */
-  max-width: 24px; /* Prevents it from growing too large */
-  min-height: 12px; /* Sets a minimum size for smaller screens */
-  min-width: 12px; /* Sets a minimum size for smaller screens */
 }
 
 
-/* .iconlogo{
-  height: 18px;
-  width: 18px;
-} */
+
+
+.icnlogo{
+  height: 17px;
+  width: 17px;
+}
 .clor{
   background: rgba(255, 255, 255, 1);
   color: rgba(65, 70, 81, 1);
-  height: 43px;
+  
 
 
 }
@@ -224,11 +252,11 @@ color: rgba(255, 255, 255, 1);
 }
 .search{
   display: flex;
-  padding:10px 14px 10px 14px;
+  padding:5px 10px 5px 10px;
   align-items: center;
   gap: 6px;
   width: 300px;
-  height: 25px;
+  height: 20px;
   border-radius: 6px;
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(213, 215, 218, 1);
@@ -238,12 +266,17 @@ box-shadow: 0px 0px 0px 1px var(--ColorsEffectsShadowsshadow-skeumorphic-inner-b
 
 }
 .search img{
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 .bottomrepo{
   height: max-content;
   width: 100%;
+  
+}
+.shadow{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -15px inset, 
+  rgba(0, 0, 0, 0.3) 0px 15px 26px -13px inset
 
 }
 .reponames{
@@ -252,7 +285,13 @@ box-shadow: 0px 0px 0px 1px var(--ColorsEffectsShadowsshadow-skeumorphic-inner-b
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(213, 215, 218, 1)
+  
 }
+.reponames:hover{
+  background: rgba(245, 245, 245, 1);
+
+}
+
 .repobox{
   margin-left: 1%;
   height: 80%;
@@ -313,5 +352,132 @@ color: rgba(24, 29, 39, 1);
 .element p{
 color: rgba(24, 29, 39, 1);
 
+
 }
-/*  */
+@media (max-width: 750px) {
+  .repo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  } 
+  .leftrepo{
+    width: 100%;
+    height: max-content;
+  }
+  .search{
+    min-width: 300px;
+  }
+  .repohead{
+    font-family: Inter;
+    font-size: var(--Fontsizedisplay-xs);
+    font-weight: 600;
+    line-height: var(--Lineheightdisplay-xs);
+  }
+  .topreponame{
+    padding-top:15px ;
+  }
+ 
+  .toprepo{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .buttons{
+    margin-top: 10px;
+    width: max-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+  }
+  .leftrepo-center{
+    width: 100vw;
+    height: max-content;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+  }
+  .rightrepo{
+    height: max-content;
+    border: none;
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(233, 234, 235, 1)
+
+
+  }
+  .lefttop{
+    padding-top: 0;
+  }
+  .end{
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 10px;
+  }
+  #bar{
+    display:block;
+    height: 20px;
+    width: 20px;
+  }
+  .dropdownlist{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+  }
+  .signlogo{
+    width: 95vw;
+    margin: 0;
+  }
+  .repologobox{
+    width: 95vw;
+    height: fit-content;
+  }
+  .rightrepo{
+    width: 100%;
+  }
+  .repobuttons{
+
+    width: 100%;
+    margin-top: 5px;
+    height: max-content;
+   align-items: center;
+   
+  }
+ .blue1{
+  background: none;
+  color: rgba(65, 70, 81, 1);
+  box-shadow: none;
+ }
+ .home1{
+  display: block;
+ }
+ .home{
+  display: none;
+ }
+ .sign-button{
+  height: 24px;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 0;
+ }
+.repolist{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 350px;
+}
+.signlogo{
+  padding-top: 20px;
+}
+.inrlogo{
+  height: 18px;
+  width: 18px;
+}
+#block{
+  display: none;
+}
+  
+}
