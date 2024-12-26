@@ -11,11 +11,17 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Screenshot 2024-12-26 114047](https://github.com/user-attachments/assets/65d64266-9284-4022-b10f-b30c82003a6a)
+
+![Screenshot 2024-12-26 111753](https://github.com/user-attachments/assets/175e1882-ed58-4f6e-8f01-643b440624bd)
+
+![Screenshot 2024-12-26 111825](https://github.com/user-attachments/assets/9130584c-e648-471b-9fa8-92ec513c8cce)
+
+![Screenshot 2024-12-26 111816](https://github.com/user-attachments/assets/383c8bdf-2ac1-4e1e-906f-209919c9af78)
+
+
 
 ### `npm test`
-
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
